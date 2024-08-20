@@ -1,0 +1,19 @@
+<div>
+  <h1>GraphQL subscription via SSE</h1>
+  <button
+    (click)="triggerSubscription()"
+    data-cy="trigger-subscription-button"
+  >
+    Trigger Subscription
+  </button>
+  Received Events: {{ receivedSubscriptionMessages }}
+</div>
+
+
+<div>
+  <h1>Upload file via multipart form</h1>
+  <input
+    type="file"
+    (change)="selectFile($event)"
+  />
+</div>

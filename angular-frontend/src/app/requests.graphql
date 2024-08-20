@@ -1,0 +1,15 @@
+query helloWorld{
+  hello
+}
+
+mutation uploadFile($file: Upload!) {
+  uploadFile(file: $file)
+}
+
+mutation triggerSubscription ($message: String!) {
+  triggerSubscription(someMessage: $message)
+}
+
+subscription somethingHappened {
+  somethingHappened
+}

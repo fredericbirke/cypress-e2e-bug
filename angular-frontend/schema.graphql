@@ -1,0 +1,21 @@
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Mutation {
+  triggerSubscription(someMessage: String!): Boolean!
+  uploadFile(file: Upload!): Boolean!
+}
+
+type Query {
+  hello: String!
+}
+
+type Subscription {
+  somethingHappened: String!
+}
+
+"The `Upload` scalar type represents a file upload."
+scalar Upload
